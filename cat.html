@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Бегущий кот</title> <!-- Добавлен title -->
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: transparent;
+            height: 100vh; /* Гарантируем высоту */
+        }
+
+        .cat {
+            position: absolute;
+            bottom: 0;
+            left: -120px;
+            width: 120px;
+            animation: walk 7s linear infinite;
+        }
+
+        @keyframes walk {
+            0%   { left: -120px; }
+            100% { left: 100%; }
+        }
+        
+        /* Опционально: можно добавить плавность в конце/начале цикла */
+        /* 
+        .cat {
+            animation: walk 7s ease-in-out infinite;
+        }
+        */
+    </style>
+</head>
+<body>
+
+<img class="cat"
+     src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif"
+     alt="Бегущий кот"> <!-- Добавлен alt для доступности -->
+
+</body>
+</html>
